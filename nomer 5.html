@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+
+<html>
+<head>
+    <title>Tugas Pemrograman Web</title></head>
+<body>
+    <h1>Tugas Nomer 5</h1>
+    <script>
+        var P1={
+            tinggiBadan:200,
+            umur:20
+        };
+        var P2={
+            tinggiBadan:200,
+            umur:20
+        };
+        
+        var SkorUmurP1=P1.umur*5;
+        var SkorUmurP2=P2.umur*5;
+        
+        var totalSkorP1=SkorUmurP1+P1.tinggiBadan;
+        
+        var totalSkorP2=SkorUmurP2+P2.tinggiBadan;
+        console.log("Player 1 & 2 Joined!")
+        console.log("")
+        console.log("->Skor Pemain 1 adalah : "+totalSkorP1);
+        console.log("->Skor Pemain 2 adalah : "+totalSkorP2);
+        
+        
+        console.log("")
+        console.log("Player 3 Joined!")
+        console.log("");
+        var P3={
+            tinggiBadan:300,
+            umur:20
+        };
+        
+        var SkorUmurP3=P3.umur*5;
+        var totalSkorP3=SkorUmurP3+P3.tinggiBadan;
+        
+        console.log("->Skor Pemain 1 adalah : "+totalSkorP1);
+        console.log("->Skor Pemain 2 adalah : "+totalSkorP2);
+        console.log("->Skor Pemain 3 adalah : "+totalSkorP3);
+        console.log("")
+        console.log("Result: ")
+        
+        if(totalSkorP2 && totalSkorP3 < totalSkorP1){
+            if(totalSkorP1==totalSkorP2){
+                console.log("-Pemain 1 & 2 Seri")
+            }
+            else if(totalSkorP1==totalSkorP3){
+                console.log("-Pemain 1 & 3 Seri")
+            }
+            else{
+                console.log("-Pemain 1 Menang")
+            }
+        }
+        
+        else if(totalSkorP1 && totalSkorP3 < totalSkorP2){
+            if(totalSkorP1 == totalSkorP2){
+                console.log("-Pemain 1 & 2 Seri")
+            }
+            else if(totalSkorP2 == totalSkorP3){
+                console.log("-Pemain 2 & 3 Seri")
+            }
+            else{
+                console.log("-Pemain 2 Menang")
+            }
+        }
+        
+        else if(totalSkorP1 && totalSkorP2 < totalSkorP3){
+            if(totalSkorP1 == totalSkorP3){
+                console.log("-Pemain 1 & 3 Seri")
+            }
+            else if(totalSkorP1 == totalSkorP3){
+                console.log("-Pemain 1 & 3 Seri")
+            }
+            else{
+                console.log("-Pemain 3 Menang")
+            }
+        }
+        else if(totalSkorP1 == totalSkorP2 == totalSkorP3){
+            console.log("-Semua Pemain Seri")
+        }
+        else{}
+        
+    </script>
+    </body>
+</html>
